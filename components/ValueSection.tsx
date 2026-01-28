@@ -71,7 +71,7 @@ export const ValueSection: React.FC = () => {
           </div>
           <div className="lg:w-1/3">
             <p className="text-slate-600 text-lg leading-relaxed border-l-4 border-brand-cyan pl-6">
-              Our advanced ENCO VRU technology doesn't just filter vapors—it reclaims them, 
+              Our advanced VRU technology doesn't just filter vapors—it reclaims them, 
               providing immediate financial returns while meeting strict environmental regulations.
             </p>
           </div>
@@ -83,30 +83,7 @@ export const ValueSection: React.FC = () => {
           ))}
         </div>
 
-        {/* Bottom Feature Bar */}
-        <div className="mt-20 bg-brand-dark rounded-[40px] p-12 text-white flex flex-col md:flex-row items-center justify-between gap-8">
-          <div>
-            <h4 className="text-2xl font-bold mb-2">Ready to start saving?</h4>
-            <p className="text-slate-400">Calculate your potential ROI with our recovery specialist.</p>
-          </div>
-          <div className="flex flex-wrap justify-center gap-6">
-            <div className="flex items-center gap-2">
-              <CheckCircle2 className="w-5 h-5 text-brand-cyan" />
-              <span className="text-sm font-medium">Quick Installation</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <CheckCircle2 className="w-5 h-5 text-brand-cyan" />
-              <span className="text-sm font-medium">24/7 Monitoring</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <CheckCircle2 className="w-5 h-5 text-brand-cyan" />
-              <span className="text-sm font-medium">Global Support</span>
-            </div>
-          </div>
-          <button className="bg-white text-brand-dark px-8 py-4 rounded-2xl font-bold hover:bg-brand-cyan hover:text-white transition-all">
-            Contact Sales
-          </button>
-        </div>
+
       </div>
     </section>
   );

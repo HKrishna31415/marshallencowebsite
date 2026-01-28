@@ -32,7 +32,7 @@ export const RevenueSection: React.FC = () => {
             </h2>
             <p className="text-slate-400 text-lg leading-relaxed mb-10 max-w-xl">
               Average high-volume stations lose over 0.5% of their product to evaporation. 
-              Our ENCO VRU technology captures this loss and returns it directly to your bottom line.
+              Our VRU technology captures this loss and returns it directly to your bottom line.
             </p>
 
             <div className="grid sm:grid-cols-2 gap-6">
@@ -129,10 +129,7 @@ export const RevenueSection: React.FC = () => {
                   </div>
                 </div>
 
-                <button className="w-full mt-8 py-4 bg-white text-brand-dark rounded-2xl font-bold hover:bg-brand-cyan hover:text-white transition-all flex items-center justify-center gap-2 group">
-                  Get Detailed Report
-                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </button>
+
               </div>
             </div>
           </div>

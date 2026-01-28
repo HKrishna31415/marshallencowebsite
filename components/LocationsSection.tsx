@@ -4,15 +4,15 @@ import { MapPin, Globe2 } from 'lucide-react';
 export const LocationsSection: React.FC = () => {
   const flags = [
     { code: 'br', alt: 'Brazil' },
+    { code: 'ie', alt: 'Ireland' },
     { code: 'cn', alt: 'China' },
-    { code: 'us', alt: 'USA' },
     { code: 'kr', alt: 'South Korea' },
     { code: 'jo', alt: 'Jordan' },
     { code: 'az', alt: 'Azerbaijan' },
   ];
 
   const locations = [
-    { id: 'us', top: '35%', left: '22%', label: 'USA' },
+    { id: 'ie', top: '25%', left: '46%', label: 'Ireland' },
     { id: 'br', top: '65%', left: '32%', label: 'Brazil' },
     { id: 'jo', top: '40%', left: '55%', label: 'Jordan' },
     { id: 'az', top: '37%', left: '59%', label: 'Azerbaijan' },

@@ -11,12 +11,12 @@ export const FAQSection: React.FC = () => {
       answer: "Marshall Energy is a pioneer in sustainable energy technology, specializing in high-efficiency vapor recovery units (VRU). We help global industries reduce their environmental footprint while capturing lost product value."
     },
     {
-      question: "How does the ENCO VRU system work?",
+      question: "How does the VRU system work?",
       answer: "Our system uses advanced condensation and adsorption technology to capture volatile organic compounds (VOCs) that would otherwise evaporate. These vapors are then converted back into high-quality liquid fuel and returned to the storage tank."
     },
     {
       question: "What safety certifications do you hold?",
-      answer: "Safety is our top priority. Our units are fully ATEX and IECEx certified for explosive atmospheres. We also hold multiple patents and have been verified by leading international safety auditing firms."
+      answer: "Safety is our top priority. Our units are fully ATEX certified for explosive atmospheres. We also hold multiple patents and have been verified by leading international safety auditing firms."
     },
     {
       question: "What is the typical return on investment (ROI)?",
@@ -24,7 +24,7 @@ export const FAQSection: React.FC = () => {
     },
     {
       question: "Can the system be monitored remotely?",
-      answer: "Yes, every ENCO unit comes equipped with our proprietary cloud-based monitoring system, allowing you to track recovery rates, system health, and environmental impact from anywhere in the world."
+      answer: "Yes, every unit comes equipped with our proprietary cloud-based monitoring system, allowing you to track recovery rates, system health, and environmental impact from anywhere in the world."
     }
   ];
 
@@ -43,12 +43,7 @@ export const FAQSection: React.FC = () => {
                 Common <br />
                 <span className="text-brand-blue">Questions</span>
               </h2>
-              <p className="text-slate-500 text-lg mb-8 leading-relaxed">
-                Can't find the answer you're looking for? Reach out to our technical support team for detailed specifications.
-              </p>
-              <button className="px-8 py-4 border-2 border-brand-blue text-brand-blue rounded-2xl font-bold hover:bg-brand-blue hover:text-white transition-all">
-                Contact Support
-              </button>
+
             </div>
           </div>
 

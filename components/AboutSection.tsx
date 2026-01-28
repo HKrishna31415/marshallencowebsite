@@ -20,20 +20,19 @@ export const AboutSection: React.FC = () => {
               </div>
 
               {/* Stats Overlay */}
-              <div className="absolute bottom-8 left-8 right-8 bg-white/90 backdrop-blur-md rounded-2xl p-6 shadow-xl flex justify-between items-center">
+              <div className="absolute top-8 left-8 right-8 bg-white/90 backdrop-blur-md rounded-2xl p-6 shadow-xl flex justify-between items-center">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-brand-blue">150+</div>
-                  <div className="text-xs font-bold text-slate-400 uppercase tracking-wider">Installations</div>
+                  <div className="text-xl font-bold text-brand-blue leading-tight">Representative<br/>Installation</div>
                 </div>
-                <div className="w-px h-10 bg-slate-200" />
+                <div className="w-px h-10 bg-slate-200 mx-2" />
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-brand-blue">99.9%</div>
+                  <div className="text-3xl font-bold text-brand-blue">99%</div>
                   <div className="text-xs font-bold text-slate-400 uppercase tracking-wider">Uptime</div>
                 </div>
-                <div className="w-px h-10 bg-slate-200" />
+                <div className="w-px h-10 bg-slate-200 mx-2" />
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-brand-blue">12M+</div>
-                  <div className="text-xs font-bold text-slate-400 uppercase tracking-wider">Liters Saved</div>
+                  <div className="text-2xl font-bold text-brand-blue">10kL</div>
+                  <div className="text-xs font-bold text-slate-400 uppercase tracking-wider">Saved / Month</div>
                 </div>
               </div>
             </div>
@@ -44,34 +43,31 @@ export const AboutSection: React.FC = () => {
               <span className="w-8 h-[2px] bg-brand-blue" />
               Our Story
             </div>
-            <h2 className="text-4xl md:text-6xl font-display font-bold text-slate-900 leading-tight mb-8">
-              Pioneering <span className="text-brand-blue">Sustainable</span> Recovery Since 2012.
+            <h2 className="text-4xl md:text-5xl font-display font-bold leading-tight mb-8">
+              Pioneering Clean <br />
+              <span className="text-brand-blue">Energy Since 2020.</span>
             </h2>
-
-            <p className="text-lg text-slate-600 leading-relaxed mb-8">
-              Marshall Energy was founded with a single mission: to eliminate product loss in the energy sector 
-              through innovative vapor capture. Today, we are global leaders in ENCO VRU technology.
+            <p className="text-slate-600 text-lg leading-relaxed mb-10">
+              Founded with a mission to eliminate fuel waste and reduce carbon emissions, 
+              Marshall Energy has become a leader in VRU technology. 
+              We provide turnkey solutions for the most demanding fuel handling environments.
             </p>
 
             <div className="grid sm:grid-cols-2 gap-8 mb-10">
-              <div className="space-y-4">
-                <div className="w-12 h-12 rounded-xl bg-brand-blue/5 flex items-center justify-center text-brand-blue">
-                  <Target className="w-6 h-6" />
+              {[
+                { title: "Zero Emission", desc: "100% vapor capture rate", icon: Zap, color: "blue" },
+                { title: "Rapid Deployment", desc: "Modular, skid-mounted design", icon: Target, color: "cyan" }
+              ].map((item, idx) => (
+                <div key={idx} className="space-y-4">
+                  <div className={`w-12 h-12 rounded-xl flex items-center justify-center ${item.color === 'blue' ? 'bg-brand-blue/5 text-brand-blue' : 'bg-brand-cyan/10 text-brand-cyan'}`}>
+                    <item.icon className="w-6 h-6" />
+                  </div>
+                  <h4 className="font-bold text-slate-900">{item.title}</h4>
+                  <p className="text-sm text-slate-500 leading-relaxed">
+                    {item.desc}
+                  </p>
                 </div>
-                <h4 className="font-bold text-slate-900">Our Mission</h4>
-                <p className="text-sm text-slate-500 leading-relaxed">
-                  Driving the transition to zero-emission fuel handling through affordable, high-tech recovery.
-                </p>
-              </div>
-              <div className="space-y-4">
-                <div className="w-12 h-12 rounded-xl bg-brand-cyan/10 flex items-center justify-center text-brand-cyan">
-                  <Award className="w-6 h-6" />
-                </div>
-                <h4 className="font-bold text-slate-900">Global Standards</h4>
-                <p className="text-sm text-slate-500 leading-relaxed">
-                  Certified excellence in safety and environmental compliance across all major continents.
-                </p>
-              </div>
+              ))}
             </div>
 
             <div className="flex flex-wrap gap-4 pt-8 border-t border-slate-100">
@@ -83,10 +79,7 @@ export const AboutSection: React.FC = () => {
                 <CheckCircle2 className="w-4 h-4 text-green-500" />
                 ATEX Certified
               </div>
-              <div className="flex items-center gap-2 px-4 py-2 bg-slate-50 rounded-full text-sm font-bold text-slate-600">
-                <CheckCircle2 className="w-4 h-4 text-green-500" />
-                IECEx Verified
-              </div>
+
             </div>
           </div>
 

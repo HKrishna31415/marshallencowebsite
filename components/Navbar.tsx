@@ -50,9 +50,6 @@ export const Navbar: React.FC = () => {
               {link.name}
             </a>
           ))}
-          <button className="bg-brand-blue text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-brand-accent transition-all shadow-lg shadow-brand-blue/20 flex items-center gap-2">
-            Get Started <ArrowRight className="w-4 h-4" />
-          </button>
         </div>
 
         {/* Mobile Toggle */}

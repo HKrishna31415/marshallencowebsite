@@ -3,7 +3,7 @@ import { ArrowRight, Play, Shield, Zap } from 'lucide-react';
 
 export const HeroSection: React.FC = () => {
   return (
-    <div className="relative min-h-screen w-full flex items-center pt-20 overflow-hidden bg-brand-dark">
+    <div className="relative min-h-screen w-full flex items-center py-32 overflow-hidden bg-brand-dark">
       {/* Background with subtle animation */}
       <div 
         className="absolute inset-0 z-0 opacity-40 scale-105"
@@ -39,22 +39,9 @@ export const HeroSection: React.FC = () => {
           </h1>
           
           <p className="text-lg md:text-xl text-slate-300 mb-12 max-w-2xl leading-relaxed animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-200">
-            Marshall Energy ENCO VRU's convert escaped vapors back into high-quality fuel. 
+            Marshall Energy VRUs convert escaped vapors back into high-quality fuel. 
             Sustainable solutions for gas stations, aviation, and industrial storage.
           </p>
-
-          <div className="flex flex-col sm:flex-row items-center gap-6 animate-in fade-in slide-in-from-bottom-10 duration-1000 delay-300">
-            <button className="w-full sm:w-auto px-8 py-4 bg-brand-blue hover:bg-brand-accent text-white rounded-2xl font-bold text-lg transition-all shadow-xl shadow-brand-blue/25 flex items-center justify-center gap-3 group">
-              Get a Quote
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </button>
-            <button className="w-full sm:w-auto px-8 py-4 bg-white/5 hover:bg-white/10 text-white rounded-2xl font-bold text-lg transition-all backdrop-blur-md border border-white/10 flex items-center justify-center gap-3">
-              <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center">
-                <Play className="w-4 h-4 fill-white" />
-              </div>
-              How it Works
-            </button>
-          </div>
 
           {/* Trust Badges */}
           <div className="mt-20 grid grid-cols-2 md:grid-cols-3 gap-8 pt-8 border-t border-white/10 animate-in fade-in duration-1000 delay-500">

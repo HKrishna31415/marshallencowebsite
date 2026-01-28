@@ -10,13 +10,13 @@ import { Footer } from './components/Footer';
 
 const App: React.FC = () => {
   return (
-    <div className="min-h-screen w-full bg-slate-50">
+    <div className="min-h-screen w-full bg-white">
       <Navbar />
       <HeroSection />
-      <LocationsSection />
-      <AboutSection />
-      <RevenueSection />
       <ValueSection />
+      <RevenueSection />
+      <AboutSection />
+      <LocationsSection />
       <FAQSection />
       <Footer />
     </div>
